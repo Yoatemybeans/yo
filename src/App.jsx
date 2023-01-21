@@ -3,13 +3,12 @@ function App() {
 	return (
 		<div className="min-h-screen flex flex-col text-gray-800">
 			<main className="container mx-auto px-6 pt-6 flex-1 text-center">
-      			<img src="src\assets\For Web\png\Color logo - no background.png" alt="" height="100rem" width="20%"></img>
-				
+
 				<h3 className="text-2xl md:text-4xl lg:text-6xl uppercase">The Next Level of</h3>
 				<h2 className="text-3xl md:text-6xl lg:text-8xl uppercase font-black mb-8">Dropshipping</h2>
 
 				<p className="text-base md:text-lg lg:text-3xl mb-8">
-					Storox is a dropshipping website designed for tiktokers where anyone can sell anything they want, without ever having to set up their own product. Storox connects sellers with suppliers who will drop ship the products directly to customers on their behalf. The best part is that it's also completely free.
+					Storox is a dropshipping website designed for tiktokers where anyone can sell anything they want, without ever having to set up their own product. Storox connects sellers with suppliers who will drop ship the products directly to customers on their behalf. It's also completley free so you never have to worry about cost.
 				</p>
 
 				<div className="text-lg md:text-2xl lg:text-3xl py-2 px-4 md:py-4 md:px-10 lg:py-6 lg:px-12 bg-black bg-opacity-10 w-fit mx-auto mb-8 rounded-full">
@@ -21,7 +20,8 @@ function App() {
 					id="storox-form"
 					name="storox-form"
 					action="https://sheetdb.io/api/v1/7khjhbg6k1vtb"
-					target="hiddenFrame">
+					target="hiddenFrame"
+          >
 
 					<div className="flex flex-col md:flex-row justify-center mb-4">
 						<input
@@ -31,15 +31,15 @@ function App() {
 							id="member_email"
 							className="text-2xl placeholder:text-gray-500 placeholder:italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-black bg-opacity-10 focus:bg-opacity-20 duration-150 md:rounded-tr-none md:rounded-br-none rounded-full outline-none mb-4 md:mb-0"
 						/>
-						<button
+						<input
 							type="submit"
 							value="Join Waitlist"
 							name="member[subscribe]"
 							id="member_submit"
 							className="bg-gradient-to-r from-amber-200 to-yellow-600 hover:from-amber-200 hover:to-yellow-500 md:rounded-tl-none md:rounded-bl-none text-gray-700 rounded-full text-2xl py-4 px-6 md:px-10 lg:py-6 lg:px-12 font-bold uppercase cursor-pointer hover:opacity-85 duration-150"
-							onSubmit={submitForm()}
-						> Join Waitlist </button> 
-
+							onClick="submitForm()"
+						/>
+            
 					</div>
 					<div className="opacity-75 italic">
 						By joining the waitlist, you can gain an upperhand over other dropshippers

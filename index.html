@@ -19,15 +19,12 @@
             Swal.fire(
               'Please enter a valid email address',
             )
-            alert("Please enter a valid email address")
-           
             return false;
           }
           else {
             Swal.fire(
               'Thank you for chosing Storox. We will Email you when we launch and you will recieve exclusive benefits.',
             )
-            
             return true;
           }
           
@@ -44,12 +41,9 @@
 
   </head>
   <body>
-    <div>
-      <img src="src\assets\For Web\png\Color logo - no background.png" alt="" height="100rem" width="20%"
-        style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 0; margin-top: 1%;">
-    </div>
+
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx">
+    <script type="module" src="/src/App.jsx">
          var form = document.getElementById('storox-form');
           form.addEventListener("submit", e => {
             e.preventDefault();

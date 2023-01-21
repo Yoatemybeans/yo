@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src\assets\logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("form").submit(function () {
+          var empt = document.forms["storox-form"]["data[email]"].value;
+          if (empt == "") {
+            Swal.fire(
+              'Please enter a valid email address',
+            )
+            return false;
+          }
+          else {
+            Swal.fire(
+              'Thank you for chosing Storox. We will Email you when we launch and you will recieve exclusive benefits.',
+            )
+            return true;
+          }
+          
+        });
+      });
+      
+          function contactAlert() {
+          Swal.fire(
+            'Email: support@joinstorox.com',
+          )
+        }
+     
+    </script>
+
+  </head>
+  <body>
+    <div>
+      <img src="src\assets\For Web\png\Color logo - no background.png" alt="" height="100rem" width="20%"
+        style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 0; margin-top: 1%;">
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx">
+         var form = document.getElementById('storox-form');
+          form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+              method: "POST",
+              body: new FormData(document.getElementById("storox-form")),
+            }).then(
+              response => response.json()
+            ).then((html) => {
+              // you can put any JS code here
+              alert('success')
+            });
+          });
+    </script>
+    
+    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+    
+  </body>
+</html>

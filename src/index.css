@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     background-image: url('./bg.jpg');
     background-size: cover;

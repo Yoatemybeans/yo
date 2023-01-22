@@ -3,7 +3,7 @@ function App() {
 	return (
 		<div className="min-h-screen flex flex-col text-gray-800">
 			<main className="container mx-auto px-6 pt-6 flex-1 text-center">
-				<img src="src\assets\For Web\png\Color logo - no background.png" alt="" id="storoxlogo"></img>
+				
 				<h3 className="text-2xl md:text-4xl lg:text-6xl uppercase">The Next Level of</h3>
 				<h2 className="text-3xl md:text-6xl lg:text-8xl uppercase font-black mb-8">Dropshipping</h2>
 

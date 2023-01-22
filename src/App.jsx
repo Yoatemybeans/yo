@@ -8,7 +8,7 @@ function App() {
 				<h2 className="text-3xl md:text-6xl lg:text-8xl uppercase font-black mb-8">Dropshipping</h2>
 
 				<p className="text-base md:text-lg lg:text-3xl mb-8">
-					Storox is a dropshipping website designed for tiktokers where anyone can sell anything they want, without ever having to set up their own product. Storox connects sellers with suppliers who will drop ship the products directly to customers on their behalf. It's also completley free so you never have to worry about cost.
+					Storox is a dropshipping website designed for tiktokers where anyone can sell anything they want, without ever having to set up their own product. Storox connects sellers with suppliers who will drop ship the products directly to customers on their behalf. The best part is that it's also completely free unlike other dropshipping platforms.
 				</p>
 
 				<div className="text-lg md:text-2xl lg:text-3xl py-2 px-4 md:py-4 md:px-10 lg:py-6 lg:px-12 bg-black bg-opacity-10 w-fit mx-auto mb-8 rounded-full">
@@ -21,6 +21,7 @@ function App() {
 					name="storox-form"
 					action="https://sheetdb.io/api/v1/7khjhbg6k1vtb"
 					target="hiddenFrame"
+					onSubmit="submitForm()"
           >
 
 					<div className="flex flex-col md:flex-row justify-center mb-4">

@@ -13,12 +13,12 @@ main {
     margin-top: none;
 }
 
-.storoxlogo {
+#storoxlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-    height: 100px;
+    height: 75px;
 }
 
 /* width */
